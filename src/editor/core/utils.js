@@ -422,7 +422,7 @@ KISSY.add(function(S, UA, Node) {
 
             debugUrl:function(url) {
                 if (S.startsWidth(url, "./") || S.startsWidth("../")) {
-                    url = S.Config.base + url;
+                    url = S.Config.base + "editor/" + url;
                 }
                 if (!S.Config.debug) {
                     url.replace(/\.(css|js)/i, "-min.$1");
